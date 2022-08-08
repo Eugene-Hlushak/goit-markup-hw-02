@@ -4,26 +4,28 @@
   --title-color: #212121;
   --scnd-title-color: #ffffff;
   --bg-color: #f5f5f5;
+  --text-font-size: 14px;
+  --section-title-font-size: 36px;
+  --team-title-font-size: 16px;
+  --features-title-font-size: 14px;
+  --footer-contacts-color: rgba(255, 255, 255, 0.6);
 }
 
 body {
   background-color: var(--bg-color);
   font-family: Roboto;
   color: var(--text-color);
+  font-size: var(--text-font-size);
 }
 
-/* logo */
+/* nav */
 .logo {
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  text-decoration: none;
   color: var(--accent-color);
-}
-
-.link {
   text-decoration: none;
 }
 
@@ -31,58 +33,69 @@ body {
   color: #000000;
 }
 
-.logo-footer {
-  color: var(--scnd-title-color);
-}
-
-/* navigation */
-.nav .link {
+.nav-link {
   color: var(--title-color);
-}
-.link:hover,
-.link:focus {
-  color: var(--accent-color);
-}
-.contact {
-  color: var(--text-color);
+  text-decoration: none;
 }
 
-.address {
-  color: var(--scnd-title-color);
+.top .contact-link {
+  color: var(--text-color);
+  text-decoration: none;
 }
 
 /* hero */
-
 .hero-title {
-  font-weight: 900;
+  color: var(--scnd-title-color);
   font-size: 44px;
-  line-height: 1.36;
   text-align: center;
-  letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+.button {
+}
+
+/* main */
+.section-title {
+  font-size: var(--section-title-font-size);
+  color: var(--title-color);
+}
+
+.features-title {
+  font-size: var(--features-title-font-size);
+  color: var(--title-color);
+}
+
+.team-title {
+  font-size: var(--team-title-font-size);
+  color: var(--title-color);
+}
+
+/* footer */
+
+.logo-footer {
   color: var(--scnd-title-color);
 }
-
-/* titles */
-
-.features-title,
-.filters,
-.work-title,
-.team-title {
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--title-color);
+.bottom-link {
+  color: #ffffff;
+  text-decoration: none;
 }
 
-.list-title {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--title-color);
+.bottom .contact-link {
+  text-decoration: none;
+  color: var(--footer-contacts-color);
 }
 
+/* lists and links */
 .list {
   list-style: none;
+}
+.logo:focus,
+.nav-link:hover,
+.nav-link:focus,
+.contact-link:hover,
+.contact-link:focus,
+.bottom-link:hover,
+.bottom-link:focus,
+.button:focus {
+  color: var(--accent-color);
 }
