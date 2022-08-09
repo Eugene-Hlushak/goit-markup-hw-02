@@ -4,18 +4,22 @@
   --title-color: #212121;
   --scnd-title-color: #ffffff;
   --bg-color: #f5f5f5;
-  --text-font-size: 14px;
-  --section-title-font-size: 36px;
-  --team-title-font-size: 16px;
-  --features-title-font-size: 14px;
   --footer-contacts-color: rgba(255, 255, 255, 0.6);
+  --link-font-size: 14px;
+  --features-text-font-size: 14px;
+  --features-title-font-size: 14px;
+  --team-text-font-size: 16px;
+  --team-title-font-size: 16px;
+  --portfolio-title-font-size: 18px;
+  --portfolio-text-font-size: 16px;
+  --section-title-font-size: 36px;
+  --portfolio-btn-bgcolor: #f5f4fa;
 }
 
 body {
   background-color: var(--bg-color);
   font-family: Roboto;
   color: var(--text-color);
-  font-size: var(--text-font-size);
 }
 
 /* nav */
@@ -29,16 +33,18 @@ body {
   text-decoration: none;
 }
 
-.logo-header {
+.top-logo {
   color: #000000;
 }
 
 .nav-link {
+  font-size: var(--link-font-size);
   color: var(--title-color);
   text-decoration: none;
 }
 
 .top .contact-link {
+  font-size: var(--link-font-size);
   color: var(--text-color);
   text-decoration: none;
 }
@@ -51,7 +57,15 @@ body {
   text-transform: uppercase;
 }
 
-.button {
+.button.hero {
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--scnd-title-color);
+  background: var(--accent-color);
 }
 
 /* main */
@@ -64,25 +78,34 @@ body {
   font-size: var(--features-title-font-size);
   color: var(--title-color);
 }
+.features .text {
+  font-size: var(--features-text-font-size);
+}
 
 .team-title {
   font-size: var(--team-title-font-size);
   color: var(--title-color);
 }
 
+.team .text {
+  font-size: var(--team-text-font-size);
+}
+
 /* footer */
 
-.logo-footer {
+.bottom-logo {
   color: var(--scnd-title-color);
 }
 .bottom-link {
   color: #ffffff;
   text-decoration: none;
+  font-size: var(--link-font-size);
 }
 
 .bottom .contact-link {
   text-decoration: none;
   color: var(--footer-contacts-color);
+  font-size: var(--link-font-size);
 }
 
 /* lists and links */
@@ -98,4 +121,29 @@ body {
 .bottom-link:focus,
 .button:focus {
   color: var(--accent-color);
+}
+
+/* Сторінка portfolio */
+.portfolio-title {
+  color: var(--title-color);
+  font-size: var(--portfolio-title-font-size);
+}
+.portfolio-text {
+  font-size: var(--portfolio-text-font-size);
+}
+
+.button.filters {
+  background: var(--portfolio-btn-bgcolor);
+  color: var(--title-color);
+  cursor: pointer;
+}
+.button.filters:hover,
+.button.filters:focus {
+  background-color: var(--accent-color);
+  color: var(--scnd-title-color);
+}
+
+.portfolio.hero-title,
+.filters-title {
+  opacity: 0;
 }
