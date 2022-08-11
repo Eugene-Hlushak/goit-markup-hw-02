@@ -92,6 +92,7 @@ body {
   color: var(--scnd-title-color);
   background: var(--accent-color);
 
+  font-family: 'Roboto';
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
@@ -132,8 +133,6 @@ body {
   line-height: 1.19;
 }
 
-/* footer */
-
 /* lists and links */
 .list {
   list-style: none;
@@ -144,8 +143,8 @@ body {
 .nav-link:focus,
 .contact-link:hover,
 .contact-link:focus,
-.bottom-link:hover,
-.bottom-link:focus,
+.address-link:hover,
+.address-link:focus,
 .button:focus {
   color: var(--accent-color);
 }
